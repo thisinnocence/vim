@@ -1,0 +1,26 @@
+[http]
+	sslVerify = false
+[https]
+	sslVerify = false
+[alias]
+	d = diff
+	s = status
+	f = fetch
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short -12
+	co = checkout
+	cm = commit
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	bv = branch -vv
+    rv = remote -v
+	cane = commit --amend --no-edit
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[core]
+	editor = vim
+[pager]
+	diff = false
+	branch = false
+	log = false
+
