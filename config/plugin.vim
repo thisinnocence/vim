@@ -51,9 +51,18 @@ endif
 " airline
 let g:airline#extensions#tabline#enabled = 1
 
+" git: vim-fugitive
+nnoremap <Leader>g :Git blame<cr>
+
 " apt install ctags
+" ctags -R
 set tags=./tags;,tags
 
-" git
-nnoremap <Leader>g :Git blame<cr>
+" apt install cscope
+" cscope -Rb
+if filereadable("cscope.out")
+    cs add cscope.out
+endif
+nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> " all reference
+nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR> " caller func
 
