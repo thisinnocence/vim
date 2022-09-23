@@ -102,8 +102,9 @@ nnoremap <leader>w :w!<cr>
 nnoremap <leader>q :q<cr>
 
 " Buffer next/previous
-nnoremap <C-m> :bn<cr>
-nnoremap <C-n> :bp<cr>
+" :help key-notation shows CTRL-M is equivalent to Enter
+"nnoremap <C-M> :bp<cr>
+nnoremap <C-N> :bn<cr>
 
 " Paste multiple times
 xnoremap p pgvy
