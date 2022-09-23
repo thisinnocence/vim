@@ -35,7 +35,18 @@ let g:Lf_NormalMap = {
 	\ }
 
 " Nerdtree
-nnoremap <F2> :NERDTreeFind<CR>zz<C-W><C-W>
+let g:NgetPathFlag = 0
+function NgetPath()
+    if g:NgetPathFlag == 0
+        let g:NgetPathFlag = 1
+        execute "NERDTreeFind"
+        execute "normal! zz\<C-W>\<C-W>"
+    else
+        let g:NgetPathFlag = 0
+        execute "NERDTreeClose"
+    endif
+endfunction
+nnoremap <F2> :call NgetPath()<CR>
 
 " vimdiff
 if &diff
