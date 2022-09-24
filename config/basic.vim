@@ -98,8 +98,6 @@ map <C-l> <C-W>l
 :command! Q q
 :command! QA qa
 :command! WQA wqa
-nnoremap <leader>w :w!<cr>
-nnoremap <leader>q :q<cr>
 
 " Buffer next/previous
 " :help key-notation shows CTRL-M is equivalent to Enter
