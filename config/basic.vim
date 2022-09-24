@@ -38,7 +38,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-map <Leader><cr> :noh<cr>
+nnoremap <Leader><cr> :noh<cr>
 
 " Donot redraw while executing macros for better performance
 set lazyredraw
