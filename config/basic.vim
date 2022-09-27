@@ -99,9 +99,7 @@ map <C-l> <C-W>l
 :command! QA qa
 :command! WQA wqa
 
-" Buffer next/previous
-" :help key-notation shows CTRL-M is equivalent to Enter
-"nnoremap <C-M> :bp<cr>
+" Avoid CTRL-M(== Enter), :help key-notation
 nnoremap <C-N> :bn<cr>
 
 " Paste multiple times
