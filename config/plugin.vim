@@ -35,6 +35,7 @@ let g:Lf_NormalMap = {
 	\ }
 
 " Nerdtree
+let NERDTreeRespectWildIgnore = 1
 let NERDTreeIgnore=['\.o$', '\.so$']
 let g:NgetPathFlag = 0
 function NgetPath()
