@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'preservim/nerdtree'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'ackyshake/VimCompletesMe'
 call plug#end()
 
 " LeaderF
