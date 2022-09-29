@@ -108,8 +108,4 @@ xnoremap p pgvy
 " Insert mode keymap
 inoremap <c-a> <home>
 inoremap <c-e> <end>
-inoremap <C-h> <left>
-inoremap <C-j> <down>
-inoremap <C-k> <up>
-inoremap <C-l> <right>
 

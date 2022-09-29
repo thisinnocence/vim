@@ -6,7 +6,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'preservim/nerdtree'
 Plug 'cormacrelf/vim-colors-github'
-Plug 'ackyshake/VimCompletesMe'
+
+" coc.nvim config at file lsp.vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " LeaderF
