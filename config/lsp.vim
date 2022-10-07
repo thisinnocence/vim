@@ -9,10 +9,13 @@
 " https://github.com/clangd/coc-clangd
 "   :CocInstall coc-clangd
 
-" coc.nvim works best on vim >= 8.2.0750 and neovim >= 0.5.0, consider upgrade your vim.
+" https://unixcop.com/latest-version-of-vim-ubuntu-20-04/
+"   when build vim, enable python support
+"     --enable-python3interp --enable-cscope --enable-multibyte
+" coc.nvim works best on vim >= 8.2.0750 and neovim >= 0.5.0, consider upgrade vim.
 " Note that some features may behave incorrectly.
 " You can add this to your vimrc to avoid this message:
-let g:coc_disable_startup_warning = 1
+"   let g:coc_disable_startup_warning = 1
 
 " Some servers have issues with backup files, see #649.
 set nobackup
