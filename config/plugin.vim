@@ -36,6 +36,8 @@ let g:Lf_NormalMap = {
 	\ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
 	\ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
 	\ }
+"https://github.com/Yggdroot/LeaderF/issues/161
+let g:Lf_UseCache = 0
 
 " Nerdtree
 let NERDTreeRespectWildIgnore = 1
