@@ -1,3 +1,16 @@
+# Git
+
+## Basic config
+
+```bash
+git config --global user.name "your_name"
+git config --global user.email "your_email@example.com"
+ssh-keygen -t rsa -C "your_email@example.com"
+```
+
+## Git alias
+
+```ini
 [http]
 	sslVerify = false
 [https]
@@ -23,4 +36,8 @@
 	diff = false
 	branch = false
 	log = false
+```
 
+## Reference
+
+- <https://snyk.io/blog/10-git-aliases-for-faster-and-productive-git-workflow>
