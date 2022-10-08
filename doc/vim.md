@@ -200,6 +200,5 @@ P         # 粘贴到上一处
 - [Vim从入门到精通](https://github.com/wsdjeg/vim-galore-zh_cn)
 - [笨方法学Vimscript](https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49321)
 - [use_vim_as_ide - c/c++](https://github.com/yangyangwithgnu/use_vim_as_ide)
-- <https://spacevim.org/documentation/>
 - <https://github.com/amix/vimrc>
 - <https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt>
