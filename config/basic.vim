@@ -51,6 +51,7 @@ set matchtime=2
 set t_Co=256
 try
     colorscheme desert
+    set cursorline
 catch
 endtry
 set background=dark
