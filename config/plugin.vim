@@ -41,7 +41,8 @@ let g:Lf_UseCache = 0
 
 " Nerdtree
 let NERDTreeRespectWildIgnore = 1
-let NERDTreeIgnore=['\.o$', '\.so$']
+let NERDTreeIgnore = ['\.o$', '\.so$']
+let NERDTreeWinSize = 36
 let g:NgetPathFlag = 0
 function NgetPath()
     if g:NgetPathFlag == 0
