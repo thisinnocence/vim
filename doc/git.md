@@ -1,6 +1,6 @@
 # Git
 
-## Basic config
+## Add ssh-key
 
 ```bash
 git config --global user.name "your_name"
@@ -8,7 +8,7 @@ git config --global user.email "your_email@example.com"
 ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
-## Git alias
+## Git config
 
 ```ini
 [http]
@@ -16,15 +16,14 @@ ssh-keygen -t rsa -C "your_email@example.com"
 [https]
 	sslVerify = false
 [alias]
+	b = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
 	d = diff
-	s = status
 	f = fetch
+	s = status
 	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short -12
+    br = branch -vv
 	co = checkout
 	cm = commit
-	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-	bv = branch -vv
-    rv = remote -v
 	cane = commit --amend --no-edit
 [diff]
 	tool = vimdiff
