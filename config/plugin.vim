@@ -41,6 +41,9 @@ let g:Lf_UseCache = 0
 " popup mode
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
+" apt install riggrep
+" search string use Leader rg command
+noremap <Leader>ss :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
 
 " Nerdtree
 let NERDTreeRespectWildIgnore = 1
