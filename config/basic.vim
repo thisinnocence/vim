@@ -13,6 +13,9 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" Enable switch buffer while current buffer not saved yet
+set hidden
+
 " Syntax highlight, cursor positon, so(scrolloff) lines
 syntax enable
 set ruler
