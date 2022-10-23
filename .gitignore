@@ -2,3 +2,4 @@ autoload
 cache
 plugged
 .netrwhist
+coc-settings.json
