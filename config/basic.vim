@@ -113,3 +113,8 @@ xnoremap p pgvy
 inoremap <c-a> <home>
 inoremap <c-e> <end>
 
+" Terminal in split window, ctrl+d can exit terminal
+" ctrl+w,N into normal mode in term, i into insert mode
+set splitright
+map <Leader>t :vert term<cr>
+
