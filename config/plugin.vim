@@ -14,8 +14,8 @@ call plug#end()
 " LeaderF
 " Ctrl + P  file search
 let g:Lf_ShortcutF = '<c-p>'
+" <leader>b default map to :LeaderfBuffer
 noremap <Leader>ff :LeaderfFunction<cr>
-noremap <Leader>fb :LeaderfBuffer<cr>
 noremap <Leader>ft :LeaderfTag<cr>
 noremap <Leader>fm :LeaderfMru<cr>
 noremap <Leader>fl :LeaderfLine<cr>
