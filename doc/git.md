@@ -12,29 +12,29 @@ ssh-keygen -t rsa -C "your_email@example.com"
 
 ```ini
 [http]
-	sslVerify = false
+    sslVerify = false
 [https]
-	sslVerify = false
+    sslVerify = false
 [alias]
-	b = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-	d = diff
-	f = fetch
-	s = status
-	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short -12
+    b = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    d = diff
+    f = fetch
+    s = status
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short -12
     br = branch -vv
-	co = checkout
-	cm = commit
-	cane = commit --amend --no-edit
+    co = checkout
+    cm = commit
+    cane = commit --amend --no-edit
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [core]
-	editor = vim
+    editor = vim
 [pager]
-	diff = false
-	branch = false
-	log = false
+    diff = false
+    branch = false
+    log = false
 ```
 
 ## Reference
