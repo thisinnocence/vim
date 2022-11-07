@@ -20,7 +20,7 @@ ssh-keygen -t rsa -C "your_email@example.com"
     d = diff
     f = fetch
     s = status
-    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short -12
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short -12
     br = branch -vv
     co = checkout
     cm = commit
