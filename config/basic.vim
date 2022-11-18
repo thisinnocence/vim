@@ -118,3 +118,5 @@ inoremap <c-e> <end>
 set splitright
 map <Leader>t :vert term<cr>
 
+" stop vim from adding a newline at end of file
+set nofixendofline
