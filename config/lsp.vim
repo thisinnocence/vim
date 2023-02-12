@@ -1,22 +1,17 @@
-" Copy and modify from coc.nvim github READM
 " https://github.com/neoclide/coc.nvim
 "   :PlugInstall coc.vim
 
 " https://clangd.llvm.org/installation.html
-"   apt-get install clangd-12
-"   update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
+"   download latest version, cp -r lib bin /usr/local
 
 " https://github.com/clangd/coc-clangd
 "   :CocInstall coc-clangd
 
 " https://unixcop.com/latest-version-of-vim-ubuntu-20-04/
-"   when build vim, enable python support
+"   when build vim, enable python support for LeaderF
 "     --enable-cscope --enable-multibyte
 "     --enable-python3interp or --enable-python3interp=dynamic
-" coc.nvim works best on vim >= 8.2.0750 and neovim >= 0.5.0, consider upgrade vim.
-" Note that some features may behave incorrectly.
-" You can add this to your vimrc to avoid this message:
-"   let g:coc_disable_startup_warning = 1
+" coc.nvim works best on vim >= 8.2.0750, consider update vim
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -93,3 +88,8 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
 nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+
+" Show all diagnostics
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+" Next diagnostic
+nmap <F8> <Plug>(coc-diagnostic-next)
