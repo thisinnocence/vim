@@ -32,7 +32,7 @@ set wildmenu
 set showcmd
 
 " Ignore files
-set wildignore=*.o,*~,*.pyc
+set wildignore=*.o,*~,*.pyc,*.out
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 
 " Search, magic option enable regular expression
