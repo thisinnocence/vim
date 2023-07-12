@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'preservim/nerdtree'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'skywind3000/asyncrun.vim'
 
 " coc.nvim config at file lsp.vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

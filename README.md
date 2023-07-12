@@ -43,3 +43,7 @@ bash install.sh
 
 ### git
 - https://github.com/tpope/vim-fugitive
+
+### asyn
+- https://github.com/skywind3000/asyncrun.vim
+
