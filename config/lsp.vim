@@ -91,5 +91,6 @@ nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 
 " Show all diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
-" Next diagnostic
+
+" Next diagnostic, same to vscode
 nmap <F8> <Plug>(coc-diagnostic-next)

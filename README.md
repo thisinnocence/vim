@@ -2,9 +2,19 @@
 
 ## Installation
 
+1. Run install.sh, this will backup your old vim configures, and set symbolic link to this one.
+
 ```bash
 bash install.sh
 ```
+
+2. In vim, run the following vim command, to install vim-plugins and coc-plugins.
+
+```bash
+:PlugInstall
+:CocInstall coc-clangd
+```
+
 
 ## Reference
 
