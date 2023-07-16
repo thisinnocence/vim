@@ -92,3 +92,6 @@ endif
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> " all reference
 nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR> " caller func
 
+" asyncrun, auto build
+map <F5> :AsyncRun -mode=term -pos=right -cwd=build make -j<CR>
+

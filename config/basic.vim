@@ -103,6 +103,9 @@ map <C-l> <C-W>l
 :command! QA qa
 :command! WQA wqa
 
+" quick quit
+nnoremap <Leader>q :q<cr>
+
 " Avoid CTRL-M(== Enter), :help key-notation
 nnoremap <C-N> :bn<cr>
 
