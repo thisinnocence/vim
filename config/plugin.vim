@@ -48,7 +48,7 @@ noremap <Leader>ss :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<C
 
 " Nerdtree
 let NERDTreeRespectWildIgnore = 1
-let NERDTreeIgnore = ['\.o$', '\.so$']
+let NERDTreeIgnore = ['\.o$', '\.so$', 'tags']
 let NERDTreeWinSize = 36
 let g:NgetPathFlag = 0
 function NgetPath()
