@@ -1,8 +1,9 @@
 " Set comma as map leader key
 let mapleader = ","
 
-" Enable mouse on visual mode
-set mouse=v
+" Enable mouse on all mode
+" select copy not work, need use shift+select to copy
+set mouse=a
 
 " Configure backspace so it acts as it should act
 set nocompatible
