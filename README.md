@@ -1,4 +1,4 @@
-# Vim
+# Vim cfg
 
 ## Installation
 
@@ -15,6 +15,9 @@ bash install.sh
 :CocInstall coc-clangd
 ```
 
+## The doc directory
+
+In this directory, there are some personal configurations for tmux, zsh, proxy and git. And some vim tips.
 
 ## Reference
 
