@@ -8,18 +8,14 @@
 bash install.sh
 ```
 
-2. In vim, run the following vim command, to install vim-plugins and coc-plugins.
+2. Open Vim and execute the following commands within Vim to reinstall Vim plugins and Coc plugins.
 
 ```bash
 :PlugInstall
 :CocInstall coc-clangd
 ```
 
-## The doc directory
-
-In this directory, there are some personal configurations for tmux, zsh, proxy and git. And some vim tips.
-
-## Reference
+## References
 
 ### basic vim
 - http://oenhan.com/vim8-c-ide-plugin-vimrc
