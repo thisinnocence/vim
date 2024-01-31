@@ -8,7 +8,7 @@
 bash install.sh
 ```
 
-1. Open Vim and execute the following commands within Vim to reinstall Vim plugins and Coc plugins.
+2. Open Vim and execute the following commands within Vim to reinstall Vim plugins and Coc plugins.
 
 ```bash
 :PlugInstall
@@ -65,3 +65,4 @@ bash install.sh
 ### asyn
 
 - <https://github.com/skywind3000/asyncrun.vim>
+
