@@ -2,13 +2,27 @@
 
 ## Installation
 
-1. Run install.sh; this script will backup your existing Vim configurations and create a symbolic link to the new ones.
+### Install dependency
+
+> Install nodejs for coc.nvim:
+> <https://nodejs.org/en/download/package-manager>
+
+```bash
+sudo apt install universal-ctags
+sudo apt install clangd
+```
+
+### Run install.sh
 
 ```bash
 bash install.sh
 ```
 
-2. Open Vim and execute the following commands within Vim to reinstall Vim plugins and Coc plugins.
+this script will backup your existing Vim configurations and create a symbolic link to the new ones.
+
+### Install vim plugins and coc plugins
+
+Open Vim and execute the following commands within Vim to reinstall Vim plugins and Coc plugins.
 
 ```bash
 :PlugInstall
