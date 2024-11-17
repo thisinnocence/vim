@@ -22,11 +22,6 @@ syntax enable
 set ruler
 set so=2
 
-" Goto last edit position when opening files, auto read file when change outside
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-au FocusGained,BufEnter * :silent! checktime
-au FocusLost,WinLeave * :silent! w
-
 " Command lines, wildmenu option enhance auto complete
 set history=500
 set wildmenu
