@@ -91,6 +91,9 @@ au FileType html,xhtml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 au FileType make setlocal noexpandtab
 au FileType sh setlocal textwidth=0 wrap
 
+" 设置 HTML 文件的缩进为 2 个空格
+autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
+
 " Move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
