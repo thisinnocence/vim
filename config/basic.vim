@@ -87,7 +87,7 @@ au FileType html,xhtml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 au FileType make setlocal noexpandtab
 au FileType sh setlocal textwidth=0 wrap
 
-" 设置 HTML 文件的缩进为 2 个空格
+" Set HTML file indentation to 2 spaces
 autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Move between windows
