@@ -52,7 +52,6 @@ set showmatch
 set matchtime=2
 
 " Theme, line number
-set t_Co=256
 try
     colorscheme desert
     set cursorline
@@ -71,9 +70,6 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set ffs=unix,dos,mac
 
 " Filetype config, plugin and indent
-filetype on
-filetype plugin on
-filetype indent on
 filetype plugin indent on
 set autoindent
 set smartindent
