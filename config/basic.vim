@@ -25,7 +25,7 @@ set so=2
 " Goto last edit position when opening files, auto read file when change outside
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 au FocusGained,BufEnter * :silent! checktime
-au FocusLost,WinLeave * :silent! w
+au FocusLost,WinLeave * if &buftype ==# '' && &modifiable && !&readonly && expand('%') !=# '' && &modified | silent! w | endif
 
 " Command lines, wildmenu option enhance auto complete
 set history=500
