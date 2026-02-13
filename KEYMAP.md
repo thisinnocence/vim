@@ -1,87 +1,87 @@
-# Vim 个人定制快捷键速查
+# Vim Custom Keymap Quick Reference
 
-非个人定制的都按照 Vim 官方的默认快捷键使用即可。
+For anything not customized here, use Vim default keybindings.
 
-## 基础约定
+## Basics
 
-- `Leader` 键是 `,`
-- 文档中 `<Leader>` 都表示按 `,`
+- `Leader` key is `,`
+- In this document, `<Leader>` means pressing `,`
 
-## 通用与窗口
+## General and Window Navigation
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `<Leader><CR>` | 清除搜索高亮 (`:noh`) |
-| `Ctrl+h` | 切换到左侧窗口 |
-| `Ctrl+j` | 切换到下侧窗口 |
-| `Ctrl+k` | 切换到上侧窗口 |
-| `Ctrl+l` | 切换到右侧窗口 |
-| `<Leader>q` | 退出当前窗口 (`:q`) |
-| `Ctrl+n` | 切到下一个 buffer (`:bn`) |
-| `<Leader>t` | 在右侧垂直分屏打开终端 |
+| `<Leader><CR>` | Clear search highlight (`:noh`) |
+| `Ctrl+h` | Move to left window |
+| `Ctrl+j` | Move to lower window |
+| `Ctrl+k` | Move to upper window |
+| `Ctrl+l` | Move to right window |
+| `<Leader>q` | Quit current window (`:q`) |
+| `Ctrl+n` | Switch to next buffer (`:bn`) |
+| `<Leader>t` | Open terminal in right vertical split |
 
-## LeaderF / 搜索
+## LeaderF / Search
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `Ctrl+p` | LeaderF 文件搜索 |
-| `<Leader>ff` | LeaderF 函数列表 |
-| `<Leader>ft` | LeaderF Tag 列表 |
-| `<Leader>fm` | LeaderF 最近文件 (MRU) |
-| `<Leader>fl` | LeaderF 当前缓冲区行搜索 |
-| `<Leader>ss` | 以光标下单词发起 `rg` 搜索 |
+| `Ctrl+p` | LeaderF file search |
+| `<Leader>ff` | LeaderF function list |
+| `<Leader>ft` | LeaderF tag list |
+| `<Leader>fm` | LeaderF recent files (MRU) |
+| `<Leader>fl` | LeaderF line search in current buffer |
+| `<Leader>ss` | Run `rg` search for word under cursor |
 
-## NERDTree / 构建 / Git
+## NERDTree / Build / Git
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `F2` | 打开/关闭并定位 NERDTree |
-| `F5` | 在 `build` 目录执行 `make -j` (AsyncRun) |
+| `F2` | Toggle NERDTree and locate current file |
+| `F5` | Run `make -j` in `build` directory (AsyncRun) |
 | `<Leader>g` | `:Git blame` |
 
 ## LSP (coc.nvim)
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `[g` | 上一个诊断 |
-| `]g` | 下一个诊断 |
-| `F8` | 下一个诊断 |
-| `gd` | 跳转到定义 |
-| `gy` | 跳转到类型定义 |
-| `gi` | 跳转到实现 |
-| `gr` | 查找引用 |
-| `K` | 显示文档/悬浮说明 |
-| `<Leader>rn` | 重命名符号 |
-| `<Leader>ac` | 代码动作 |
-| `<Leader>qf` | 修复当前问题 |
-| `<Space>o` | 打开大纲 (`CocList outline`) |
-| `<Space>s` | 搜索工作区符号 |
-| `<Space>a` | 查看诊断列表 |
+| `[g` | Previous diagnostic |
+| `]g` | Next diagnostic |
+| `F8` | Next diagnostic |
+| `gd` | Go to definition |
+| `gy` | Go to type definition |
+| `gi` | Go to implementation |
+| `gr` | Find references |
+| `K` | Show documentation / hover |
+| `<Leader>rn` | Rename symbol |
+| `<Leader>ac` | Code action |
+| `<Leader>qf` | Fix current issue |
+| `<Space>o` | Open outline (`CocList outline`) |
+| `<Space>s` | Search workspace symbols |
+| `<Space>a` | Show diagnostics list |
 
 ## cscope
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `Ctrl+\` `s` | 查找当前单词的所有引用 (`cs find s`) |
-| `Ctrl+\` `c` | 查找当前函数调用者 (`cs find c`) |
+| `Ctrl+\` `s` | Find symbol references (`cs find s`) |
+| `Ctrl+\` `c` | Find callers of current function (`cs find c`) |
 
-## 插入模式
+## Insert Mode
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `Ctrl+a` | 光标移动到行首 |
-| `Ctrl+e` | 光标移动到行尾 |
-| `Tab` | coc 补全下一个 / 常规 Tab |
-| `Shift+Tab` | coc 补全上一个 |
-| `Enter` | 确认 coc 补全项 |
+| `Ctrl+a` | Move cursor to line start |
+| `Ctrl+e` | Move cursor to line end |
+| `Tab` | coc next completion item / normal Tab |
+| `Shift+Tab` | coc previous completion item |
+| `Enter` | Confirm coc completion item |
 
-## 可视模式
+## Visual Mode
 
-| 组合键 | 功能 |
+| Key | Action |
 | --- | --- |
-| `p` | 粘贴后保留原寄存器内容（可重复粘贴） |
+| `p` | Paste without overwriting unnamed register (repeatable paste) |
 
-## 额外命令别名（非组合键）
+## Extra Command Aliases (Not Keybindings)
 
 - `:W` -> `:w`
 - `:WQ` -> `:wq`
