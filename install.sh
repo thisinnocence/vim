@@ -5,7 +5,7 @@ cd $basePath
 
 # https://github.com/junegunn/vim-plug
 mkdir -p autoload && cd autoload
-[ ! -f plug.vim ] && wget --no-check-certificate \
+[ ! -f plug.vim ] && wget \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # backup old config
