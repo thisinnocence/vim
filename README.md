@@ -1,33 +1,86 @@
 # Vim cfg
 
-## Installation
+Personal Vim configuration focused on C/C++ development, code navigation, and fast project search.
 
-### Install dependency
+## Keymap
 
-> Install nodejs for coc.nvim:
-> <https://nodejs.org/en/download/package-manager>
+Quick reference: [`KEYMAP.md`](KEYMAP.md)
+
+## Features
+
+- LSP workflow via `coc.nvim` + `clangd`
+- Fast file/symbol search via LeaderF (+ ripgrep)
+- Git blame integration via `vim-fugitive`
+- Project tree via `NERDTree`
+- Async build task via `asyncrun.vim`
+- ctags/cscope based code navigation
+
+## Requirements
+
+### Required
+
+- Vim 8.2+ (newer is better for coc.nvim)
+- `nodejs` (for coc.nvim)
+- `clangd`
+- `universal-ctags`
+
+Install base dependencies (Ubuntu example):
 
 ```bash
-sudo apt install universal-ctags
-sudo apt install clangd
+sudo apt install nodejs clangd universal-ctags
 ```
 
-### Run install.sh
+### Optional but recommended
+
+- `ripgrep` (used by LeaderF grep search)
+- `cscope` (for `cs find`)
+
+```bash
+sudo apt install ripgrep cscope
+```
+
+## Installation
+
+1. Clone this repo to `~/.vim`.
+2. Run:
 
 ```bash
 bash install.sh
 ```
 
-this script will backup your existing Vim configurations and create a symbolic link to the new ones.
+`install.sh` will:
 
-### Install vim plugins and coc plugins
+- download `vim-plug` (`autoload/plug.vim`) if missing
+- back up existing `~/.vimrc` and `~/.vim` to `~/.vimrc_bak` / `~/.vim_bak`
+- create symlinks to this repo (`~/.vim`, `~/.vimrc`)
 
-Open Vim and execute the following commands within Vim to reinstall Vim plugins and Coc plugins.
+## Plugin setup
 
-```bash
+Open Vim and run:
+
+```vim
 :PlugInstall
 :CocInstall coc-clangd
 ```
+
+## Optional index setup (project root)
+
+```bash
+ctags -R
+cscope -Rb
+```
+
+## Included plugins
+
+- `easymotion/vim-easymotion`
+- `tpope/vim-fugitive`
+- `vim-airline/vim-airline`
+- `vim-airline/vim-airline-themes`
+- `Yggdroot/LeaderF`
+- `preservim/nerdtree`
+- `cormacrelf/vim-colors-github`
+- `skywind3000/asyncrun.vim`
+- `neoclide/coc.nvim`
 
 ## References
 
@@ -76,7 +129,6 @@ Open Vim and execute the following commands within Vim to reinstall Vim plugins 
 
 - <https://github.com/tpope/vim-fugitive>
 
-### asyn
+### async
 
 - <https://github.com/skywind3000/asyncrun.vim>
-
