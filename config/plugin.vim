@@ -16,10 +16,10 @@ call plug#end()
 " Ctrl + P  file search
 let g:Lf_ShortcutF = '<c-p>'
 " <leader>b default map to :LeaderfBuffer
-noremap <Leader>ff :LeaderfFunction<cr>
-noremap <Leader>ft :LeaderfTag<cr>
-noremap <Leader>fm :LeaderfMru<cr>
-noremap <Leader>fl :LeaderfLine<cr>
+nnoremap <Leader>ff :LeaderfFunction<cr>
+nnoremap <Leader>ft :LeaderfTag<cr>
+nnoremap <Leader>fm :LeaderfMru<cr>
+nnoremap <Leader>fl :LeaderfLine<cr>
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
 let g:Lf_WorkingDirectoryMode = 'c'  " just find cwd, Ac will find project root
@@ -44,7 +44,7 @@ let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 " apt install riggrep
 " search string use Leader rg command
-noremap <Leader>ss :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+nnoremap <Leader>ss :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
 
 " Nerdtree
 let NERDTreeRespectWildIgnore = 1
@@ -89,9 +89,8 @@ set tags=./tags;,tags
 if filereadable("cscope.out")
     cs add cscope.out
 endif
-nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> " all reference
-nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR> " caller func
+nnoremap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> " all reference
+nnoremap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR> " caller func
 
 " asyncrun, auto build
-map <F5> :AsyncRun -mode=term -pos=right -cwd=build make -j<CR>
-
+nnoremap <F5> :AsyncRun -mode=term -pos=right -cwd=build make -j<CR>

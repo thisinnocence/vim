@@ -95,10 +95,10 @@ au FileType sh setlocal textwidth=0 wrap
 autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " Write save quit
 :command! W w
@@ -123,7 +123,7 @@ inoremap <c-e> <end>
 " Terminal in split window, ctrl+d can exit terminal
 " ctrl+w,N into normal mode in term, i into insert mode
 set splitright
-map <Leader>t :vert term<cr>
+nnoremap <Leader>t :vert term<cr>
 
 " stop vim from adding a newline at end of file
 set nofixendofline
